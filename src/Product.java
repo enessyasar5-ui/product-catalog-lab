@@ -6,9 +6,9 @@ public class Product {
 
     public Product(int id, double fiyat, String bookName, String explain) {
         this.id = id;
-        this.price =fiyat;
-        this.name=bookName;
-        this.description =explain;
+        this.price = fiyat;
+        this.name = bookName;
+        this.description = explain;
     }
 
     public String getDescription() {
@@ -27,4 +27,11 @@ public class Product {
         return id;
     }
 
+    @Override
+    public String toString() {
+        return "Product{id=" + id
+                + ", name='" + name + '\''
+                + ", price=" + price
+                + ", description='" + description + "'}";
+    }
 }
